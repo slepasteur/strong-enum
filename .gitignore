@@ -1,0 +1,5 @@
+#Clion project.
+.idea
+
+#Build output.
+cmake-build-*
