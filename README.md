@@ -5,7 +5,7 @@ Strong enum is an attempt to create an enum like type that is easy to serialize/
 Strong enum instance underlying value can only be retrieved via its value method (no static_cast).
 Strong enum instance can only be constructed from one of its value or from a raw value with a check to ensure it is a valid value.
 
-##Typical enum class usage:
+## Typical enum class usage:
 
     enum class MyEnum
     {
@@ -24,7 +24,7 @@ Strong enum instance can only be constructed from one of its value or from a raw
     MyEnum wrong = static_cast<MyEnum>(3);
     std::cout << "Underlying value: " << static_cast<int>(wrong) << '\n';
 
-##Usage of strong_enum:
+## Usage of strong_enum:
 
     namespace MyEnum {
         struct A : int_enum_value<0>{};
